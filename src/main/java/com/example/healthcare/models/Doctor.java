@@ -14,7 +14,7 @@ public class Doctor {
     private String firstName;
     private String lastName;
     private String specialization;
-    private String phoneNumber;
+
 
     protected Doctor() {
         // Default constructor required by JPA
@@ -23,17 +23,40 @@ public class Doctor {
         this.firstName = firstName;
         this.lastName = lastName;
         this.specialization = specialization;
-        this.phoneNumber = phoneNumber;
     }
+
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
+    }
+    public String getFirstName() {
+        return firstName;
+    }
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+    public String getLastName() {
+        return lastName;
+    }
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+    public String getSpecialization() {
+        return specialization;
+    }
+    public void setSpecialization(String specialization) {
+        this.specialization = specialization;
+    }
+
     @Override
     public String toString() {
         return "Doctor{" +
                 "id=" + this.id +
                 ", first name='" + this.firstName + '\'' +
                 ", last name='" + this.lastName + '\'' +
-                ", specialization='" + specialization + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
+                ", specialization='" + this.specialization + '\'' +
                 '}';
-
     }
 }
