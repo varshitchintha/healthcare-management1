@@ -19,6 +19,45 @@ public class Patient {
 
     protected Patient() {
     }
+
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
+    }
+    public String getFirstName() {
+        return firstName;
+    }
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+    public String getLastName() {
+        return lastName;
+    }
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+    public Integer getAge() {
+        return age;
+    }
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+    public String getGender() {
+        return gender;
+    }
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+    public String getAddress() {
+        return address;
+    }
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+
     public Patient(String firstName, String lastName, Integer age, String gender, String address) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -27,6 +66,7 @@ public class Patient {
         this.address = address;
     }
 
+
     @Override
     public String toString() {
         return "Patient{" +
@@ -34,8 +74,8 @@ public class Patient {
                 ", first name='" + this.firstName + '\'' +
                 ", last name='" + this.lastName + '\'' +
                 ", age=" + this.age +
-                ", gender='" + gender + '\'' +
-                ", address='" + address + '\'' +
+                ", gender='" + this.gender + '\'' +
+                ", address='" + this.address + '\'' +
                 '}';
     }
 }
